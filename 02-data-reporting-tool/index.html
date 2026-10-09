@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Reporting Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <a href="../index.html" class="back-link">&larr; Back to Portfolio</a>
+      <h1>Data Reporting Tool</h1>
+      <p>Submit and validate internal operational and financial metrics.</p>
+    </header>
+
+    <main class="main-layout">
+      <!-- Form Card -->
+      <section class="card form-card">
+        <h2>Submit New Report</h2>
+        <form id="reportForm" novalidate>
+          
+          <!-- Report Name -->
+          <div class="form-group">
+            <label for="reportTitle">Report Title <span class="required">*</span></label>
+            <input type="text" id="reportTitle" placeholder="e.g., Q3 Operational Summary" required />
+            <small class="error-msg" id="titleError"></small>
+          </div>
+
+          <!-- Category Select -->
+          <div class="form-group">
+            <label for="reportCategory">Category <span class="required">*</span></label>
+            <select id="reportCategory" required>
+              <option value="">-- Select Category --</option>
+              <option value="Financial">Financial</option>
+              <option value="Operations">Operations</option>
+              <option value="Client Feedback">Client Feedback</option>
+              <option value="Technical/IT">Technical/IT</option>
+            </select>
+            <small class="error-msg" id="categoryError"></small>
+          </div>
+
+          <!-- Metric Value -->
+          <div class="form-group">
+            <label for="metricValue">Metric Value / Output <span class="required">*</span></label>
+            <input type="number" id="metricValue" placeholder="e.g., 94" min="0" step="any" required />
+            <small class="error-msg" id="valueError"></small>
+          </div>
+
+          <!-- Description / Notes -->
+          <div class="form-group">
+            <label for="reportNotes">Notes / Observations</label>
+            <textarea id="reportNotes" rows="3" placeholder="Provide extra context or brief analysis..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Submit Report</button>
+        </form>
+      </section>
+
+      <!-- Submissions Dynamic Feed Card -->
+      <section class="card feed-card">
+        <div class="feed-header">
+          <h2>Submitted Data Logs</h2>
+          <span class="count-badge" id="reportCount">0 entries</span>
+        </div>
+
+        <div class="reports-list" id="reportsList">
+          <p class="empty-state" id="emptyState">No reports submitted yet. Fill out the form to log data.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

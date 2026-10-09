@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Workflow Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <h2>Workflow Hub</h2>
+      </div>
+      <nav class="nav-menu">
+        <a href="#all" class="nav-link active" data-filter="all">Dashboard</a>
+        <a href="#clients" class="nav-link" data-filter="clients">Clients</a>
+        <a href="#schedules" class="nav-link" data-filter="schedules">Schedules</a>
+        <a href="#tasks" class="nav-link" data-filter="tasks">Tasks</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Header / User Bar -->
+      <header class="top-bar">
+        <h1>Client Workflow</h1>
+        <!-- Interactive Manager Profile Dropdown/Modal Toggle -->
+        <div class="user-profile" id="userProfileBtn" style="cursor: pointer;">
+          <span>Manager Overview ▾</span>
+        </div>
+      </header>
+
+      <!-- Dashboard Grid Area -->
+      <section class="dashboard-grid">
+        
+        <!-- Priority Tasks Widget -->
+        <article class="card task-widget" id="tasksSection">
+          <h3>Workflow Priorities</h3>
+          <ul class="task-list" id="taskList">
+            <!-- Populated dynamically via JS -->
+          </ul>
+        </article>
+
+        <!-- Active Schedules Widget -->
+        <article class="card schedule-widget" id="schedulesSection">
+          <section class="upcoming-section">
+             <h2>Upcoming</h2>
+
+               <div id="upcoming-container">
+                <p>Loading upcoming schedules...</p>
+               </div>
+           </section>
+        </article>
+
+        <!-- Client Records Overview -->
+         
+        <article class="card recent-client-widget" id="clientSection">
+           <section class="recent-client-card">
+             <h2>Recent Client Record</h2>
+             <div id="latest-client-record">
+               <p>Loading latest client record...</p>
+             </div>
+           </section>
+        </article>
+
+        
+
+      </section>
+    </main>
+  </div>
+   <section id="clients-container"></section>
+  <script src="script.js"></script>
+</body>
+</html>

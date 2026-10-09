@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    name="description"
+    content="Annet Irungu - Frontend Developer, ICT Professional and Virtual Assistant."
+  />
+
+  <title>Annet Irungu | Frontend Developer & Virtual Assistant</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo" aria-label="Annet Irungu home">
+        ANNET<span>.</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="hero-intro">HELLO, I AM</p>
+
+        <h1>
+          <span>Annet Irungu</span>
+        </h1>
+
+        <p class="hero-tagline">
+          Frontend Developer, ICT Professional, and Administrative
+          Virtual Assistant.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            Hire Me
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-curve" aria-hidden="true">
+        <svg
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#242424"
+            d="M0,128L80,149.3C160,171,320,213,480,218.7C640,224,800,192,960,176C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+      <div class="page-container about-container">
+        <div class="about-image-column">
+          <div class="about-image-frame">
+            <img
+              src="images/Annetpic.png"
+              alt="Portrait of Annet Irungu"
+              class="about-image"
+            />
+
+            <div class="experience-badge">
+              <strong>4+</strong>
+              <span>Years of<br />Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">ABOUT ME</p>
+
+          <div class="accent-line"></div>
+
+          <h2>Introduction About Me</h2>
+
+          <p>
+            I am a frontend developer and ICT professional with practical
+            experience building responsive, accessible, and visually clean
+            web interfaces using HTML, CSS, and JavaScript.
+          </p>
+
+          <p>
+            Alongside web development, I bring more than four years of
+            administrative virtual assistance experience. I support clients
+            with data entry, digital records, document preparation, research,
+            workflow organization, and customer communication.
+          </p>
+
+          <div class="about-skills">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>Virtual Assistance</span>
+            <span>Data Management</span>
+          </div>
+
+          <a href="#contact" class="text-link">
+            Let’s work together <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services-section">
+      <div class="page-container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I DO</p>
+          <h2>Services I Offer</h2>
+          <p>
+            Practical frontend and administrative support for professionals,
+            teams, and growing businesses.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-number">01</div>
+
+            <h3>Frontend Development</h3>
+
+            <p>
+              Responsive websites and user interfaces built with clean HTML,
+              CSS, and JavaScript.
+            </p>
+
+            <ul>
+              <li>Landing pages</li>
+              <li>Portfolio websites</li>
+              <li>Responsive layouts</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">02</div>
+
+            <h3>Virtual Assistance</h3>
+
+            <p>
+              Reliable administrative support to help you manage day-to-day
+              digital tasks efficiently.
+            </p>
+
+            <ul>
+              <li>Email and calendar support</li>
+              <li>Document preparation</li>
+              <li>Online research</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">03</div>
+
+            <h3>Data & Workflow Support</h3>
+
+            <p>
+              Organized data handling and simple systems that make daily
+              business work easier.
+            </p>
+
+            <ul>
+              <li>Data entry and cleanup</li>
+              <li>Spreadsheet organization</li>
+              <li>Digital records management</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section">
+      <div class="page-container">
+        <div class="section-heading">
+          <p class="eyebrow">PORTFOLIO</p>
+          <h2>Featured Projects</h2>
+          <p>
+            A selection of practical frontend projects and workflow-focused
+            interface concepts.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual project-visual-dashboard">
+              <span class="project-visual-label">VA Dashboard</span>
+
+              <div class="mock-dashboard">
+                <div class="mock-sidebar"></div>
+
+                <div class="mock-main">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <p class="project-count">01</p>
+
+              <h3>Client Workflow Dashboard</h3>
+
+              <p>
+                A responsive interface concept for organizing tasks, schedules,
+                client records, and workflow priorities.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <a href="./01-client-dashboard/index.html" target="_blank" aria-label="View Client Workflow Dashboard demo">
+                  Live Demo <span>↗</span>
+                </a>
+              
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual project-visual-data">
+              <span class="project-visual-label">Data System</span>
+
+              <div class="mock-form">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <p class="project-count">02</p>
+
+              <h3>Data Reporting Tool</h3>
+
+              <p>
+                A clean form-based tool concept for collecting information,
+                validating submissions, and organizing business data.
+              </p>
+
+              <div class="project-tags">
+                <span>Forms</span>
+                <span>Validation</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <a href="./02-data-reporting-tool/index.html" target="_blank" aria-label="View Data Reporting Tool demo">
+                  Live Demo <span>↗</span>
+                </a>
+              
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual project-visual-business">
+              <span class="project-visual-label">Business Site</span>
+
+              <div class="mock-website">
+                <div></div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <p class="project-count">03</p>
+
+              <h3>Responsive Business Website</h3>
+
+              <p>
+                A modern website layout for a small business with responsive
+                sections, clear calls to action, and a polished user flow.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive UI</span>
+              </div>
+
+              <div class="project-links">
+                <a href="./03-responsive-website/index.html" target="_blank" aria-label="View Responsive Business Website demo">
+                  Live Demo <span>↗</span>
+                </a>
+
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="page-container">
+        <div class="section-heading">
+          <p class="eyebrow">CONTACT</p>
+          <h2>Let’s Work Together</h2>
+          <p>
+            Have a website idea, administrative task, or project you need help
+            with? Send me a message.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+
+            <p>
+              I am open to frontend development projects, remote virtual
+              assistance work, administrative support, and collaborative
+              opportunities.
+            </p>
+
+            <div class="contact-detail">
+              <span class="contact-label">EMAIL</span>
+              <a href="mailto:annetirungu588@gmail.com">
+                annetirungu588@gmail.com
+              </a>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-label">LOCATION</span>
+              <p>Nairobi, Kenya</p>
+            </div>
+
+            <div class="contact-social-links">
+              <a
+                href="https://github.com/annetirungu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://linkedin.com/in/annetirungu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn ↗
+              </a>
+            </div>
+          </div>
+
+          <form id="portfolio-contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Enter your name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                placeholder="What would you like to discuss?"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Tell me a little about your project..."
+                required
+              ></textarea>
+            </div>
+
+            <button id="submit-btn" class="submit-btn" type="submit">
+              Send Message
+            </button>
+
+            <p
+              id="form-response-status"
+              class="status-message"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="page-container footer-grid">
+      <div class="footer-intro">
+        <a href="#hero" class="footer-logo">ANNET<span>.</span></a>
+
+        <p>
+          Frontend Developer, ICT Professional, and Administrative Virtual
+          Assistant based in Kenya.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Navigation</h3>
+
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Connect</h3>
+
+        <a href="mailto:annetirungu588@gmail.com">
+          Email Me
+        </a>
+
+        <a
+          href="https://github.com/annetirungu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://linkedin.com/in/annetirungu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="page-container footer-bottom-content">
+        <p>&copy; 2026 Annet Irungu. All rights reserved.</p>
+
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
