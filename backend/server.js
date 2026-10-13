@@ -25,12 +25,16 @@ app.use('/02-data-reporting-tool', express.static(path.join(rootDir, '02-data-re
 app.use('/03-responsive-website', express.static(path.join(rootDir, '03-responsive-website')));
 app.use(express.static(rootDir));
 // Enable CORS for Live Server (port 5500)
-app.use(
-  cors({
-    origin: ['http://localhost:5500', 'http://127.0.0.1:5500'],
-  })
-);
 
+app.use(cors({
+  origin: [
+    "https://annet-irungu-portfolio.netlify.app",
+    "http://localhost:5500",
+    "http://127.0.0.1:5500"
+  ],
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
+}));
 // Parse incoming JSON request bodies
 app.use(express.json());
 

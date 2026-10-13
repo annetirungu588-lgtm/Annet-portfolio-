@@ -93,7 +93,7 @@ function initContactForm() {
     showStatus("Sending your message...", "info");
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch("https://annet-irungu-portfolio.netlify.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

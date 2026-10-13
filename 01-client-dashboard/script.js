@@ -2,7 +2,7 @@
    01-client-dashboard/script.js
    ========================================================================== */
 
-const API_URL = "http://127.0.0.1:5000/api/messages";
+const API_URL = "http://localhost:5000/api/messages";
 
 document.addEventListener("DOMContentLoaded", () => {
   const taskList = document.getElementById("taskList");
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const UPCOMING_API_URL = "http://127.0.0.1:5000/api/upcoming";
+  const UPCOMING_API_URL = " http://localhost:5000/api/upcoming-schedules";
 
 async function getUpcomingSchedules() {
   const container = document.getElementById("upcoming-container");
