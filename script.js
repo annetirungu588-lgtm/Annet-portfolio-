@@ -93,7 +93,7 @@ function initContactForm() {
     showStatus("Sending your message...", "info");
 
     try {
-      const response = await fetch("https://annet-irungu-portfolio.netlify.app/api/contact", {
+      const response = await fetch("https://annet-portfolio.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

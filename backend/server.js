@@ -29,12 +29,17 @@ app.use(express.static(rootDir));
 app.use(cors({
   origin: [
     "https://annet-irungu-portfolio.netlify.app",
+    "https://annet-portfolio.onrender.com",
     "http://localhost:5500",
     "http://127.0.0.1:5500"
   ],
   methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"]
+  allowedHeaders: ["Content-Type"],
+  credentials: true
 }));
+const cors = require("cors");
+
+
 // Parse incoming JSON request bodies
 app.use(express.json());
 
