@@ -93,7 +93,7 @@ function initContactForm() {
     showStatus("Sending your message...", "info");
 
     try {
-      const response = await fetch("https://annet-portfolio.onrender.com/contact", {
+      const response = await fetch("https:///annet-portfolio.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
